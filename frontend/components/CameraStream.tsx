@@ -303,7 +303,7 @@ export default function CameraStream({ skill, language }: Props) {
 
             {/* Top Bar */}
             <div className="absolute top-0 left-0 right-0 z-20 safe-area-top">
-                <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/70 via-black/40 to-transparent">
+                <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-b from-black/80 via-black/40 to-transparent">
                     <button
                         onClick={() => router.push('/')}
                         className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center transition-transform hover:scale-105 active:scale-95"
@@ -353,7 +353,7 @@ export default function CameraStream({ skill, language }: Props) {
 
             {/* Bottom Panel */}
             <div className="absolute bottom-0 left-0 right-0 z-20 safe-area-bottom">
-                <div className="px-4 pb-4 pt-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                <div className="px-6 pb-8 pt-10 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
 
                     {/* Feedback Bubble */}
                     <div className={`feedback-bubble mb-4 ${isCorrect ? 'correct' : 'incorrect'}`}>

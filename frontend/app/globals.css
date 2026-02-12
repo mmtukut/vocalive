@@ -29,6 +29,14 @@
   box-sizing: border-box;
 }
 
+.safe-area-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -62,7 +70,7 @@ body {
   backdrop-filter: blur(20px);
   border: 1px solid var(--border);
   border-radius: 24px;
-  padding: 2rem 1.5rem;
+  padding: 1.75rem 1.25rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;

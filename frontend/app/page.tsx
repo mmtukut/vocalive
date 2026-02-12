@@ -50,7 +50,7 @@ export default function Home() {
       <div className="glow-bg" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col min-h-screen px-6 py-10 max-w-2xl mx-auto">
+      <div className="relative z-10 flex flex-col min-h-screen px-6 sm:px-10 md:px-12 py-10 max-w-2xl mx-auto safe-area-top">
 
         {/* Header */}
         <header className="flex items-center justify-between mb-12">
