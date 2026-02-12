@@ -9,9 +9,8 @@ print(f"Testing API Key: {api_key[:5]}...{api_key[-5:] if api_key else 'None'}")
 
 if not api_key:
     # Use the one provided by user if env not loaded
-    api_key = "AIzaSyB5iBS1M1Zcr3PkESTegOCEyp7plouFA7Q" 
-    print("Using hardcoded key for test")
-
+    api_key = " " 
+ 
 genai.configure(api_key=api_key)
 
 # Test 1: List Models
