@@ -50,7 +50,7 @@ export default function Home() {
       <div className="glow-bg" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col min-h-screen px-6 sm:px-10 md:px-12 py-10 max-w-2xl mx-auto safe-area-top">
+      <div className="relative z-10 flex flex-col min-h-screen container-premium py-12 md:py-20 safe-area-top">
 
         {/* Header */}
         <header className="flex items-center justify-between mb-12">
@@ -79,8 +79,8 @@ export default function Home() {
         </header>
 
         {/* Hero */}
-        <section className="mb-12">
-          <h1 className="text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6 text-white">
+        <section className="mb-20">
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-8 text-white">
             {t.tagline}
             <br />
             <span className="shimmer-text">{t.taglineHighlight}</span>
@@ -96,7 +96,7 @@ export default function Home() {
             {t.selectSkill}
           </h2>
 
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:gap-8">
             {SKILLS.map((skill) => {
               const isSelected = selectedSkill === skill.id;
               return (
